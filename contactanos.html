@@ -7,6 +7,84 @@
     <meta name="description" content="Descripción de la página web">
 </head>
 <body>
+    <header>
+
+        <img src="Assests/logoE.jpg" style="width: 110px; height: 150px; border-radius: 50%;"> 
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="galeria de posters.html"  target="Galeria">Posters</a></li>
+          <li><a href="Acerca de nosotros.html">Acerca de Nosotros</a></li>         
+        </ul>
+      </nav>
+    </header>
+
+    <form>
+        <div style="background-color: #BEAC88; text-align: center;">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" name="nombre">
+        </div>
+        <div style="background-color: #BEAC88; text-align: center;">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+        </div>
+        <div style="background-color: #BEAC88; text-align: center;">
+            <label for="pais">País</label>
+            <input type="text" name="País">
+        </div>
+        <div style="background-color: #BEAC88; text-align: center;">
+            <label for="Dirección">Dirección de envío</label>
+            <input type="text" name="Dirección">
+        </div>
+        <div style="background-color: #BEAC88; text-align: center;">
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" size="20">
+          </div>
+          
+        <div  style="background-color: #BEAC88; text-align: center;">
+        <h3>Seleccione tipo de papel</h3>
+        </div>
+        <div  style="background-color: #BEAC88; text-align: center;">
+            <input type="radio" name="papel" id="papel-satinado" value="S">
+            <label for="papel-s">Satinado</label>
+            <input type="radio" name="papel" id="papel-glace" checked value="G">
+            <label for="papel-g">Glace</label>
+        </div>
+        <div  style="background-color: #BEAC88; text-align: center;">
+            <br>
+            <h3>Seleccione tamaño de Impresión</h3>
+            <br>
+            <select name="size">
+                <br>
+              <option>Selecciona una opción</option>
+              <br>
+              <option value="IB">20.9cm x 20.9cm</option>
+              <br>
+              <option value="IRS">30.5cm x 30.5cm</option>
+              <br>
+              <option value="RA">40.6cm x 40.6cm</option>
+              <br>
+            </select>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+
+  
+          
+        <div  style="background-color: #BEAC88; text-align: center;">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje"></textarea>
+          </div>
+        <br>
+        <br>
+        <div  style="background-color: #BEAC88; text-align: center;">
+            <button type="submit">Enviar</button>       
+        </div>
+        
+        
+    </form>
     
 </body>
 </html>
