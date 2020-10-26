@@ -34,8 +34,12 @@
         <li>Los envíos se realizan de 3 a 5 días hábiles. Se le enviará el tracking number del shipping para que pueda seguir el envío</li>
       </ol>
     </main>
+
     <form>
+      <!-- Datos Personales -->
         <div style="background-color: #BEAC88; text-align: center;">
+          <h3>Complete sus datos personales</h3>
+
             <label for="nombre">Nombre y Apellido</label>
             <input type="text" name="nombre">
         </div>
@@ -55,20 +59,52 @@
             <label>Teléfono:</label>
             <input type="tel" name="telefono" size="20">
           </div>
-          
+      
+      <!-- Tipo de papel -->
         <div  style="background-color: #BEAC88; text-align: center;">
-        <h3>Seleccione tipo de papel</h3>
-        </div>
-        <div  style="background-color: #BEAC88; text-align: center;">
+          <h3>Seleccione tipo de papel</h3>
             <input type="radio" name="papel" id="papel-satinado" value="S">
             <label for="papel-s">Satinado</label>
             <input type="radio" name="papel" id="papel-glace" checked value="G">
             <label for="papel-g">Glace</label>
         </div>
+
+        <!-- Seleccion de Coleccion -->
         <div  style="background-color: #BEAC88; text-align: center;">
             <br>
-            <h3>Seleccione tamaño de Impresión</h3>
+            <h3>Elija su Poster</h3>
+            <select name="size">
+              <br>
+            <option>Selecciona una Coleccion</option>
             <br>
+            <option value="CI">Colection I</option>
+            <br>
+            <option value="B&N">Black & white illustrations</option>
+            <br>
+            <option value="RA">Colection II</option>
+            <br>
+            <option value="CIII">Colection III</option>
+            <br>
+            <option value="WL">Watercolor</option>
+          </select>
+          
+          <!-- Selección número de poster -->
+          <div  style="background-color: #BEAC88; text-align: center;">
+            <h3>Seleccione Numero de Poster</h3>
+            </div>
+            <div  style="background-color: #BEAC88; text-align: center;">
+                <input type="radio" name="papel" id="papel-satinado" value="S">
+                <label for="papel-s">Poster 1</label>
+                <input type="radio" name="papel" id="papel-glace" checked value="G">
+                <label for="papel-g">Poster 2</label>
+                <input type="radio" name="papel" id="papel-glace" checked value="G">
+                <label for="papel-g">Poster 3</label>
+                <input type="radio" name="papel" id="papel-glace" checked value="G">
+                <label for="papel-g">Poster 4</label>
+            </div>
+
+            <!-- Selección tamaño -->
+            <h3>Seleccione tamaño de Impresión</h3>
             <select name="size">
                 <br>
               <option>Selecciona una opción</option>
@@ -80,26 +116,17 @@
               <option value="RA">40.6cm x 40.6cm</option>
               <br>
             </select>
-          </div>
+            </div>
           <br>
           <br>
           <br>
-          <br>
-
-  
-          
-        <div  style="background-color: #BEAC88; text-align: center;">
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje"></textarea>
-          </div>
-        <br>
-        <br>
-        <div  style="background-color: #BEAC88; text-align: center;">
-            <button type="submit">Enviar</button>       
-        </div>
-        
-        
+          <!-- Boton Enviar -->
+          <div  style="background-color: #BEAC88; text-align: center;">
+              <button type="submit">Enviar</button>       
+          </div>       
     </form>
+
+    <!-- Footer -->
     <footer>
       <div>
       <h3>Encontranos en las redes</h3>
