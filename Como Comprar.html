@@ -14,7 +14,7 @@
         <nav id="menu">
 
           <!-- NAVIGATION -->
-        <ul>
+        <ul style="background-color: #ec823a;" >
           <li><a href="index.html">Home</a></li>
           <li><a href="galeria de posters.html"  target="Galeria">Posters</a></li>
           <li><a href="Acerca de nosotros.html">Acerca de Nosotros</a></li>         
@@ -23,45 +23,53 @@
     </header>
     <main>
 
-      <h1>Como comprar nuestros posters</h1>
-      <ol>
-        <li>Complete el formulario adjuntado aquí abajo</li>
-        <li>Haga click en "Enviar"</li>
-        <li>Recibirá un email de confirmación con los detalles de su pedido</li>
-        <li>A continuación recibirá un email nuestro con un link de pago</li>
-        <li>Haga el pago y adjunte el recibo o comprobante. Envíelo por email</li>
-        <li>Recibirá la confirmación de pago. </li>
-        <li>Los envíos se realizan de 3 a 5 días hábiles. Se le enviará el tracking number del shipping para que pueda seguir el envío</li>
+      <h1 style="background-color: #BEAC88; text-align: center;" >Como comprar nuestros posters</h1>
+      <ol style="background-color: #f2ead3; text-align: center;" >
+        <li>Complete el formulario adjunto aquí abajo</li>
+        <br>
+        <li>Haga click en <strong>"Enviar"</strong></li>
+        <br>
+        <li>Recibirá un email de confirmación con los detalles de su pedido y link de pago</li>
+        <br>
+        <li>Realice el pago y adjunte el recibo o comprobante al email</li>
+        <br>
+        <li>Recibirá la confirmación de pago y el tracking number de su orden para que pueda hacer el seguimiento del envío. </li>
+        <br>
+        <li><strong>Los envíos se realizan de 3 a 5 días hábiles posteriores al pago.</strong></li>
       </ol>
     </main>
 
     <form>
       <!-- Datos Personales -->
-        <div style="background-color: #BEAC88; text-align: center;">
+        <div style="background-color: #f2ead3; text-align: center;">
           <h3>Complete sus datos personales</h3>
 
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" name="nombre">
-        </div>
-        <div style="background-color: #BEAC88; text-align: center;">
+            <label for="nombre">Nombre</label>
+            <input type="text" minlength="2" maxlength="30" required name="nombre">
+            <label for="nombre">Apellido</label>
+            <input type="text" minlength="2" maxlength="30" required name="nombre">
             <label for="email">Email</label>
-            <input type="email" name="email">
+            <input type="email" minlength="6" maxlength="255" required name="email">
         </div>
-        <div style="background-color: #BEAC88; text-align: center;">
-            <label for="pais">País</label>
-            <input type="text" name="País">
-        </div>
-        <div style="background-color: #BEAC88; text-align: center;">
+    
+        <br>
+        <div style="background-color: #f2ead3; text-align: center;">
             <label for="Dirección">Dirección de envío</label>
-            <input type="text" name="Dirección">
+            <input type="text" minlength="2" maxlength="255" required name="Dirección">
+            <label for="Codigo Postal">Codigo Postal o Zip Code</label>
+            <input type="text" min="4" max="6" pattern="\d{4,6} -?" required name="Codigo Postal">
+            <label for="Pais">Pais</label>
+            <input type="text" minlength="2" maxlength="255" required name="Dirección">
         </div>
-        <div style="background-color: #BEAC88; text-align: center;">
+        <br>
+        <div style="background-color: #f2ead3; text-align: center;">
             <label>Teléfono:</label>
-            <input type="tel" name="telefono" size="20">
+            <input type="tel" required name="telefono" size="20">
           </div>
+
       
       <!-- Tipo de papel -->
-        <div  style="background-color: #BEAC88; text-align: center;">
+        <div  style="background-color: #f2ead3; text-align: center;">
           <h3>Seleccione tipo de papel</h3>
             <input type="radio" name="papel" id="papel-satinado" value="S">
             <label for="papel-s">Satinado</label>
@@ -70,12 +78,12 @@
         </div>
 
         <!-- Seleccion de Coleccion -->
-        <div  style="background-color: #BEAC88; text-align: center;">
+        <div  style="background-color: #f2ead3; text-align: center;">
             <br>
             <h3>Elija su Poster</h3>
             <select name="size">
               <br>
-            <option>Selecciona una Coleccion</option>
+            <option>Selecciona una Colección</option>
             <br>
             <option value="CI">Colection I</option>
             <br>
@@ -89,10 +97,10 @@
           </select>
           
           <!-- Selección número de poster -->
-          <div  style="background-color: #BEAC88; text-align: center;">
+          <div  style="background-color: #f2ead3; text-align: center;">
             <h3>Seleccione Numero de Poster</h3>
             </div>
-            <div  style="background-color: #BEAC88; text-align: center;">
+            <div  style="background-color: #f2ead3; text-align: center;">
                 <input type="radio" name="papel" id="papel-satinado" value="S">
                 <label for="papel-s">Poster 1</label>
                 <input type="radio" name="papel" id="papel-glace" checked value="G">
@@ -121,13 +129,13 @@
           <br>
           <br>
           <!-- Boton Enviar -->
-          <div  style="background-color: #BEAC88; text-align: center;">
+          <div  style="background-color: #f2ead3; text-align: center;">
               <button type="submit">Enviar</button>       
           </div>       
     </form>
 
     <!-- Footer -->
-    <footer>
+    <footer style="background-color: #ec823a;" >
       <div>
       <h3>Encontranos en las redes</h3>
       <a href="https://www.facebook.com/FigueroaVIII/?ref=hl" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
