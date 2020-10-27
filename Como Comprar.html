@@ -16,7 +16,7 @@
           <!-- NAVIGATION -->
         <ul style="background-color: #ec823a;" >
           <li><a href="index.html">Home</a></li>
-          <li><a href="galeria de posters.html"  target="Galeria">Posters</a></li>
+          <li><a href="galeria de posters.html">Posters</a></li>
           <li><a href="Acerca de nosotros.html">Acerca de Nosotros</a></li>         
         </ul>
       </nav>
@@ -57,7 +57,7 @@
             <label for="Dirección">Dirección de envío</label>
             <input type="text" minlength="2" maxlength="255" required name="Dirección">
             <label for="Codigo Postal">Codigo Postal o Zip Code</label>
-            <input type="text" min="4" max="6" pattern="\d{4,6} -?" required name="Codigo Postal">
+            <input type="text" minlength="4" maxlength="6" required name="Codigo Postal">
             <label for="Pais">Pais</label>
             <input type="text" minlength="2" maxlength="255" required name="Dirección">
         </div>
@@ -71,9 +71,9 @@
       <!-- Tipo de papel -->
         <div  style="background-color: #f2ead3; text-align: center;">
           <h3>Seleccione tipo de papel</h3>
-            <input type="radio" name="papel" id="papel-satinado" value="S">
+            <input type="radio" required  name="papel" id="papel-satinado" value="S">
             <label for="papel-s">Satinado</label>
-            <input type="radio" name="papel" id="papel-glace" checked value="G">
+            <input type="radio"  name="papel" id="papel-glace" checked value="G">
             <label for="papel-g">Glace</label>
         </div>
 
@@ -81,9 +81,8 @@
         <div  style="background-color: #f2ead3; text-align: center;">
             <br>
             <h3>Elija su Poster</h3>
-            <select name="size">
-              <br>
-            <option>Selecciona una Colección</option>
+            <select required name="poster">
+              
             <br>
             <option value="CI">Colection I</option>
             <br>
@@ -115,8 +114,7 @@
             <h3>Seleccione tamaño de Impresión</h3>
             <select name="size">
                 <br>
-              <option>Selecciona una opción</option>
-              <br>
+              
               <option value="IB">20.9cm x 20.9cm</option>
               <br>
               <option value="IRS">30.5cm x 30.5cm</option>
