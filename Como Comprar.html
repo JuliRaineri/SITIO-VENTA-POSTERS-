@@ -10,95 +10,96 @@
 <body>
     <header>
         <!-- LOGO -->
-        <img src="Assests/logoE.jpg" style="width: 110px; height: 150px; border-radius: 50%;"> 
-        <nav id="menu">
-
-          <!-- NAVIGATION -->
+        <img src="Assests/logoE.jpg" style="width: 110px; height: 150px; border-radius: 50%;">
+        
+        <!-- NAVIGATION -->
+        <nav id="menu">     
         <ul style="background-color: #ec823a;" >
-          <li><a href="index.html">Home</a></li>
-          <li><a href="galeria de posters.html">Posters</a></li>
-          <li><a href="Acerca de nosotros.html">Acerca de Nosotros</a></li>         
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria de posters.html">Posters</a></li>
+            <li><a href="Acerca de nosotros.html">Acerca de Nosotros</a></li>         
         </ul>
       </nav>
-    </header>
-    <main>
 
+    </header>
+
+    <main>
+           <!-- FORMULARIO -->
       <h1 style="background-color: #BEAC88; text-align: center;" >Como comprar nuestros posters</h1>
       <ol style="background-color: #f2ead3; text-align: center;" >
-        <li>Complete el formulario adjunto aquí abajo</li>
-        <br>
-        <li>Haga click en <strong>"Enviar"</strong></li>
-        <br>
-        <li>Recibirá un email de confirmación con los detalles de su pedido y link de pago</li>
-        <br>
-        <li>Realice el pago y adjunte el recibo o comprobante al email</li>
-        <br>
-        <li>Recibirá la confirmación de pago y el tracking number de su orden para que pueda hacer el seguimiento del envío. </li>
-        <br>
-        <li><strong>Los envíos se realizan de 3 a 5 días hábiles posteriores al pago.</strong></li>
+            <li>Complete el formulario adjunto aquí abajo</li>
+            <br>
+            <li>Haga click en <strong>"Enviar"</strong></li>
+            <br>
+            <li>Recibirá un email de confirmación con los detalles de su pedido y link de pago</li>
+            <br>
+            <li>Realice el pago y adjunte el recibo o comprobante al email</li>
+            <br>
+            <li>Recibirá la confirmación de pago y el tracking number de su orden para que pueda hacer el seguimiento del envío. </li>
+            <br>
+            <li><strong>Los envíos se realizan de 3 a 5 días hábiles posteriores al pago.</strong></li>
       </ol>
     </main>
 
     <form>
       <!-- Datos Personales -->
         <div style="background-color: #f2ead3; text-align: center;">
-          <h3>Complete sus datos personales</h3>
+             <h3>Complete sus datos personales</h3>
 
-            <label for="nombre">Nombre</label>
-            <input type="text" minlength="2" maxlength="30" required name="nombre">
-            <label for="nombre">Apellido</label>
-            <input type="text" minlength="2" maxlength="30" required name="nombre">
-            <label for="email">Email</label>
-            <input type="email" minlength="6" maxlength="255" required name="email">
+              <label for="nombre">Nombre</label>
+              <input type="text" minlength="2" maxlength="30" required name="nombre">
+              <label for="nombre">Apellido</label>
+              <input type="text" minlength="2" maxlength="30" required name="nombre">
+              <label for="email">Email</label>
+              <input type="email" minlength="6" maxlength="255" required name="email">
         </div>
     
         <br>
         <div style="background-color: #f2ead3; text-align: center;">
-            <label for="Dirección">Dirección de envío</label>
-            <input type="text" minlength="2" maxlength="255" required name="Dirección">
-            <label for="Codigo Postal">Codigo Postal o Zip Code</label>
-            <input type="text" minlength="4" maxlength="6" required name="Codigo Postal">
-            <label for="Pais">Pais</label>
-            <input type="text" minlength="2" maxlength="255" required name="Dirección">
+              <label for="Dirección">Dirección de envío</label>
+              <input type="text" minlength="2" maxlength="255" required name="Dirección">
+              <label for="Codigo Postal">Codigo Postal o Zip Code</label>
+              <input type="text" minlength="4" maxlength="6" required name="Codigo Postal">
+              <label for="Pais">Pais</label>
+              <input type="text" minlength="2" maxlength="255" required name="Dirección">
         </div>
         <br>
         <div style="background-color: #f2ead3; text-align: center;">
-            <label>Teléfono:</label>
-            <input type="tel" required name="telefono" size="20">
-          </div>
+             <label>Teléfono:</label>
+             <input type="tel" required name="telefono" size="20">
+        </div>
 
       
       <!-- Tipo de papel -->
         <div  style="background-color: #f2ead3; text-align: center;">
           <h3>Seleccione tipo de papel</h3>
-            <input type="radio" required  name="papel" id="papel-satinado" value="S">
-            <label for="papel-s">Satinado</label>
-            <input type="radio"  name="papel" id="papel-glace" checked value="G">
-            <label for="papel-g">Glace</label>
+              <input type="radio" required  name="papel" id="papel-satinado" value="S">
+              <label for="papel-s">Satinado</label>
+              <input type="radio"  name="papel" id="papel-glace" checked value="G">
+              <label for="papel-g">Glace</label>
         </div>
 
         <!-- Seleccion de Coleccion -->
         <div  style="background-color: #f2ead3; text-align: center;">
             <br>
-            <h3>Elija su Poster</h3>
-            <select required name="poster">
-              
+              <h3>Elija su Poster</h3>
+          <select required name="poster">             
             <br>
-            <option value="CI">Colection I</option>
-            <br>
-            <option value="B&N">Black & white illustrations</option>
-            <br>
-            <option value="RA">Colection II</option>
-            <br>
-            <option value="CIII">Colection III</option>
-            <br>
-            <option value="WL">Watercolor</option>
+              <option value="CI">Colection I</option>
+              <br>
+              <option value="B&N">Black & white illustrations</option>
+              <br>
+              <option value="RA">Colection II</option>
+              <br>
+              <option value="CIII">Colection III</option>
+              <br>
+              <option value="WL">Watercolor</option>
           </select>
-          
+        </div>
           <!-- Selección número de poster -->
           <div  style="background-color: #f2ead3; text-align: center;">
-            <h3>Seleccione Numero de Poster</h3>
-            </div>
+                <h3>Seleccione Numero de Poster</h3>
+          </div>
             <div  style="background-color: #f2ead3; text-align: center;">
                 <input type="radio" name="papel" id="papel-satinado" value="S">
                 <label for="papel-s">Poster 1</label>
@@ -112,43 +113,54 @@
 
             <!-- Selección tamaño -->
             <h3>Seleccione tamaño de Impresión</h3>
-            <select name="size">
+          <select name="size">
                 <br>
-              
-              <option value="IB">20.9cm x 20.9cm</option>
+                <option value="IB">20.9cm x 20.9cm</option>
+                <br>
+                <option value="IRS">30.5cm x 30.5cm</option>
+                <br>
+                <option value="RA">40.6cm x 40.6cm</option>
               <br>
-              <option value="IRS">30.5cm x 30.5cm</option>
-              <br>
-              <option value="RA">40.6cm x 40.6cm</option>
-              <br>
-            </select>
+          </select>
             </div>
           <br>
           <br>
           <br>
           <!-- Boton Enviar -->
           <div  style="background-color: #f2ead3; text-align: center;">
-              <button type="submit">Enviar</button>       
+                <button type="submit">Enviar</button>       
           </div>       
     </form>
 
     <!-- Footer -->
-    <footer style="background-color: #ec823a;" >
+    <footer style="background-color: #ec823a;">
+      <!-- REDES -->
       <div>
-      <h3>Encontranos en las redes</h3>
-      <a href="https://www.facebook.com/FigueroaVIII/?ref=hl" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/hugoemmanuelfigueroa/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://www.behance.net/Figueroa"  target="_blank"><i class="fa fa-behance"></i></a>
-    </div>
+       <h3>Encontranos en las redes</h3>
+          <a href="https://www.facebook.com/FigueroaVIII/?ref=hl" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/hugoemmanuelfigueroa/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.behance.net/Figueroa"  target="_blank"><i class="fa fa-behance"></i></a>
+      </div>
+
     <div>
       <h3>FIGUEROA ILUSTRACIONES</h3>
-      <strong>COPYRIGHT 2020</strong>
-      <em>Todos los derechos reservados del sitio</em>
+        <strong>COPYRIGHT 2020</strong>
+        <em>Todos los derechos reservados del sitio</em>
     </div>
+
     <div>
       <h3>email figuroafilms@gmail.com</h3>
-      <strong>Córdoba - Argentina</strong>
+        <strong>Córdoba - Argentina</strong>
     </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <ul style="background-color: #ec823a;" >
+         <li><a href="index.html">Home</a></li>
+         <li><a href="galeria de posters.html">Posters</a></li>
+         <li><a href="Acerca de nosotros.html">Acerca de Nosotros</a></li>         
+      </ul>
+    </nav>
     </footer>
 </body>
 </html>
