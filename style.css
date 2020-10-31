@@ -1,9 +1,37 @@
 body{
     background-color: #d2d3c9;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; 
 
 }
-.menu {
+.menu  {
     background-color: #ec823a;
     font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+button{
+ background:  #d2d3c9;
+ color: #7A871E;
+ transition: 300ms all;
+ width: 4rem;
+ height: 3rem;
 
 }
+
+button:hover{
+    background: #104210;
+    color: #d2d3c9;
+}
+
+.form{
+    text-align: center;
+    background-color: #d2d3c9;
+    /* background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f3f6f6 50px ), repeating-linear-gradient( #17181855, #6c7271 ); */
+    background-image: linear-gradient(to bottom, #7A871E, #ec823a);
+   overflow: hidden;
+} 
+
+
