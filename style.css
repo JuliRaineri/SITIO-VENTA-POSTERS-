@@ -1,13 +1,14 @@
 body{
-    background-color: #d2d3c9;
+    background-color: #0d0e0d;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem; 
     
 
 }
 .menu  {
+
     text-align-last: center;
-    background-color: #ec823a;
+    background-color: #d36318;
     font-family: 'Raleway', sans-serif;
     font-style: bold;
     font-weight: bolder;
@@ -49,7 +50,7 @@ input:focus {
       height: 200px;     
   } 
 
-  .Duneproceso , .colecciones{
+  .Duneproceso , .colecciones {
       display: flex;
     width: 150px;
     height: 300px
@@ -74,4 +75,12 @@ input:focus {
   .poster{
     width: 50em;
     height: 100em;
+  }
+
+  .articulos{
+      color: whitesmoke;
+      background-image: url("Assests/ilustraciones/dune/dunebn.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
   }
