@@ -40,4 +40,9 @@ input:focus {
   }
 
 
+  .portada > img{
+      border-radius: 10%;   
+      width: 140px;
+      height: 200px;     
+  } 
 
