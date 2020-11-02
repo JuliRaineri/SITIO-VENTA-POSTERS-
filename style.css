@@ -52,3 +52,16 @@ input:focus {
     height: 300px
   }
 
+.container{
+    position: relative;
+    width: 50%;
+}
+
+.imagen{
+    opacity: 1;
+    transition: 300ms all; 
+}
+
+.container:hover .imagen {
+    opacity: 0.3;
+  }
