@@ -72,15 +72,11 @@ input:focus {
     opacity: 0.3;
   }
 
-  .poster{
-    width: 50em;
-    height: 100em;
+  .poster {
+    width: 250px;
+    height: 500px;
   }
 
-  .articulos{
-      color: whitesmoke;
-      background-image: url("Assests/ilustraciones/dune/dunebn.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-  }
+  .articulos, .container {
+      color: whitesmoke; 
+  }   
