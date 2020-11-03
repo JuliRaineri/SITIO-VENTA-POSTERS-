@@ -6,8 +6,7 @@ body{
 
 }
 .menu  {
-
-    text-align-last: center;
+    display: block; 
     background-color: #d36318;
     font-family: 'Raleway', sans-serif;
     font-style: bold;
@@ -45,10 +44,17 @@ input:focus {
 
 
   .portada > img{
+      display: inline;
       border-radius: 10%;   
       width: 140px;
       height: 200px;     
   } 
+
+  .section-1{
+      display: block;
+      box-sizing: content-box;
+      margin: 50px;
+  }
 
   .Duneproceso , .colecciones {
       display: flex;
@@ -78,5 +84,8 @@ input:focus {
   }
 
   .articulos, .container {
-      color: whitesmoke; 
+      display: block;
+      text-align: center;
+      color: whitesmoke;
+
   }   
