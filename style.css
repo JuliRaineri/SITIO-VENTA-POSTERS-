@@ -6,11 +6,15 @@ body{
 
 }
 .menu  {
-    display: block; 
+    display: flex;
+    flex-flow: wrap; 
+    padding: 1em;
+    justify-content: space-around;
     background-color: #d36318;
     font-family: 'Raleway', sans-serif;
     font-style: bold;
     font-weight: bolder;
+    font-size: 1.1em;
 
 }
 
@@ -31,11 +35,15 @@ button:hover{
 }
 
 .form{
+    display: inline-table;
     font-weight: bold;
     line-height: 200%;
     text-align: center;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: solid;
+    padding-top: 10px;
     background-image: linear-gradient(to bottom, #7A871E, #ec823a);
-   overflow: hidden;
 } 
 input:focus {
     border-width: 3px;
@@ -78,14 +86,33 @@ input:focus {
     opacity: 0.3;
   }
 
-  .poster {
-    width: 250px;
-    height: 500px;
+  .poster{
+    width: 50px;
+    height: 50px;
   }
 
-  .articulos, .container {
-      display: block;
+  .articulos {
+      display: block; 
       text-align: center;
       color: whitesmoke;
+      box-sizing: border-box;
+      margin: 5px 5px; 
+      padding: 10px;
+      /* background-image: url("./Assests/ilustraciones/BN-2.png") ;
+      background-repeat: no-repeat;
+      opacity: 0.5;   opaca todo el elemento, siendo 0 opaco toal y 1 toda la imagen .*/
 
   }   
+
+  .footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 1em;
+    background-color: #d36318;
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+    font-weight: bolder;
+  }
+
+
