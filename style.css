@@ -35,17 +35,15 @@ button:hover{
 }
 
 .form{
-    display: inline-table;
+    display: grid;
     font-weight: bold;
-    line-height: 200%;
     text-align: center;
     box-sizing: border-box;
     border-color: black;
     border-style: solid;
-    padding-top: 10px;
     background-image: linear-gradient(to bottom, #7A871E, #ec823a);
 } 
-input:focus {
+input:focus , .form {
     border-width: 3px;
     border: 3px solid #104210;
   }
@@ -71,8 +69,11 @@ input:focus {
   }
 
 .container{
+    display: block;
+    justify-content: center;
     position: relative;
-    width: 50%;
+    width: 1em;
+    
 }
 
 .imagen{
@@ -91,13 +92,14 @@ input:focus {
     height: 50px;
   }
 
-  .articulos {
+  .articulos , .container{
       display: block; 
       text-align: center;
       color: whitesmoke;
       box-sizing: border-box;
-      margin: 5px 5px; 
-      padding: 10px;
+      margin: 1em;
+      padding: 1em;
+
       /* background-image: url("./Assests/ilustraciones/BN-2.png") ;
       background-repeat: no-repeat;
       opacity: 0.5;   opaca todo el elemento, siendo 0 opaco toal y 1 toda la imagen .*/
@@ -116,3 +118,13 @@ input:focus {
   }
 
 
+ .cajaArticulos{
+display: flex;
+flex-flow: column;
+justify-content: space-around;
+color: whitesmoke;
+ box-sizing: border-box;
+ margin: 1em;
+ padding: 1em;
+
+ }
