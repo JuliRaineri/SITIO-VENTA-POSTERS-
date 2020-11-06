@@ -68,11 +68,14 @@ input:focus , .form {
     height: 300px
   }
 
-.container{
+.container {
     display: block;
+    box-sizing: content-box;
     justify-content: center;
+    align-items: center;
     position: relative;
-    width: 1em;
+    
+    
     
 }
 
@@ -88,8 +91,11 @@ input:focus , .form {
   }
 
   .poster{
-    width: 50px;
-    height: 50px;
+    display: block;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
   .articulos , .container{
