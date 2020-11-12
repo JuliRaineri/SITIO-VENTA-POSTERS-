@@ -100,15 +100,33 @@ input:focus , .form {
     opacity: 0.3;
   }
 
-  .poster img{
-    display: block;
-    border-radius: 5%;
-    box-sizing: content-box;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  .poster , .posterCole1 , p{
+    display: flex;
+    flex-direction: column;
+    color: cornsilk;
+  }
+  .posterCole2{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    width: 800px;
+    height: 3000px;
+    margin: 20%;
+    
+    border-color: cornsilk; 
   }
  
+  .posterCole1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+      width: 95%;
+      height: 40%;
+      margin: 3%;
+    border-style: solid;
+    border-color: cornsilk;
+  }
+    
 
   .articulos , .container{
       display: block; 
