@@ -50,16 +50,30 @@
 
     <form>
       <!-- Datos Personales -->
-        <div>
-             <h3>Complete sus datos personales</h3>
-
-              <label for="nombre">Nombre</label>
-              <input type="text" minlength="2" maxlength="30" required name="nombre">
-              <label for="nombre">Apellido</label>
-              <input type="text" minlength="2" maxlength="30" required name="nombre">
-              <label for="email">Email</label>
-              <input type="email" minlength="6" maxlength="255" required name="email">
-        </div>
+      <h1>Crear cuenta</h1>
+      <div>
+          <label for="nombre">nombre</label>
+          <input type="text" id="nombre">
+      </div>
+      <div>
+         <label for="apellido">apellido</label>
+         <input type="text" id="apellido">
+     </div> 
+     <div>
+         <label for="email">e-mail</label>
+         <input type="text" id="email">
+     </div> 
+     <div>
+         <label for="contraseña">contraseña</label>
+         <input type="password" id="contraseña">
+     </div>
+     <div>
+         <label for="confirme-contraseña">confirme-contraseña</label>
+         <input type="password" id="confirme-contraseña">
+     </div>
+     <div>
+         <button type="button" id="create">CREATE</button>
+     </div>
     
         <br>
         <div>
@@ -134,7 +148,7 @@
           
           <!-- Boton Enviar -->
           <div>
-                <button type="submit">Enviar</button>       
+                <button type="button">Enviar</button>       
           </div>   
           <br>    
      </form>
@@ -170,5 +184,6 @@
       </ul>
     </nav>
     </footer>
+    <script src="/components/form-component/form.js"></script>
 </body>
 </html>
