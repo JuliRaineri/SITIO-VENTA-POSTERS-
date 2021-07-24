@@ -21,7 +21,7 @@ const inputNombre = document.querySelector ("#nombre") ;
 const inputApellido = document.querySelector ("#apellido") ;
 const inputEmail = document.querySelector ("#email") ;
 const inputContraseña = document.querySelector ("#contraseña") ;
-const inputConfirmarContraseña = document.querySelector ("confirme-contraseña") ;
+const inputConfirmarContraseña = document.querySelector ("#confirme-contraseña") ;
 const inputButton = document.querySelector ("#create") ;
 
 const createAccountButton = () =>{
@@ -31,15 +31,14 @@ const createAccountButton = () =>{
         inputEmail.value === "" ||
         inputContraseña.value === "" ||
         inputConfirmarContraseña.value ===""){
-            alert('Porfavor complete todos los campos') ; 
-          return  ;
+            alert('Porfavor complete todos los campos'); 
+          return;
     }
-        if (inputContraseña.value !== inputConfirmarContraseña.value) {
-              alert ('las contraseñas no coinciden') 
-              return  ;
-        }
-
-             alert('te damos la bienvenida') ;
+    if (inputContraseña.value !== inputConfirmarContraseña.value) {
+        alert('Las contraseñas no coinciden')
+        return;
+      }
+        alert('te damos la bienvenida');
     }
 
              inputButton.addEventListener("click", createAccountButton);
