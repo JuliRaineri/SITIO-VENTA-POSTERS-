@@ -8,6 +8,22 @@ body{
     font-size: 1rem; 
 }
 
+h1 {
+  display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+input{
+    display: block;
+    font-size: 1.5em;
+    border: none;
+    margin: 0.5em;
+}
+
 .menu , .footer  {
     display: flex; 
     flex-direction: row;
@@ -46,7 +62,9 @@ button:hover{
 }
 
 .form{
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-weight: bold;
     text-align: center;
     box-sizing: border-box;

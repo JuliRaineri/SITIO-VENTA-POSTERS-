@@ -28,35 +28,18 @@
 
     <main class="form">
            <!-- FORMULARIO -->
-      <div>
-            <h1>Cómo comprar nuestros posters</h1>
-         <ol>
-            <li>Complete el formulario de compra adjunto aquí abajo</li>
-            
-            <li>Haga click en <strong>"Enviar".</strong></li>
-            
-            <li>Recibirá un e-mail de confirmación con los detalles de su pedido y link de pago.</li>
-            
-            <li>Realice el pago y adjunte el recibo o comprobante de pago al e-mail.</li>
-            
-            <li>Recibirá la confirmación de pago y el tracking number de su orden para que pueda hacer el seguimiento del envío. </li>
-            
-            <li><strong>Los envíos se realizan de 3 a 5 días hábiles posteriores al pago.</strong></li>
-            
-            <li>Si tiene alguna duda antes de realizar su compra, no dude en escribirnos a figuerofilms@gmail.com</li>
-        </ol>
-    </div>
+      
     
 
     <form>
       <!-- Datos Personales -->
       <h1>Crear cuenta</h1>
       <div>
-          <label for="nombre">nombre</label>
+          <label for="nombre">Nombre</label>
           <input type="text" id="nombre">
       </div>
       <div>
-         <label for="apellido">apellido</label>
+         <label for="apellido">Apellido</label>
          <input type="text" id="apellido">
      </div> 
      <div>
@@ -64,18 +47,20 @@
          <input type="text" id="email">
      </div> 
      <div>
-         <label for="contraseña">contraseña</label>
+         <label for="contraseña">Contraseña</label>
          <input type="password" id="contraseña">
      </div>
      <div>
-         <label for="confirme-contraseña">confirme-contraseña</label>
+         <label for="confirme-contraseña">Confirme-contraseña</label>
          <input type="password" id="confirme-contraseña">
      </div>
      <div>
-         <button type="button" id="create">CREATE</button>
+         <button type="button" id="create">create</button>
      </div>
     
         <br>
+
+        <h1>Agregar Direccion</h1>
         <div>
               <label for="Dirección">Dirección de envío</label>
               <input type="text" minlength="2" maxlength="255" required name="Dirección">
@@ -92,8 +77,9 @@
 
       
       <!-- Tipo de papel -->
+      <h1>Seleccione tipo de papel</h1>
         <div>
-          <h3>Seleccione tipo de papel</h3>
+          
               <input type="radio" required  name="papel" id="papel-satinado" value="S">
               <label for="papel-s">Satinado</label>
               <input type="radio"  name="papel" id="papel-glace" checked value="G">
@@ -101,9 +87,10 @@
         </div>
 
         <!-- Seleccion de Coleccion -->
+        <h1>Elija su Poster</h1>
         <div>
             <br>
-              <h3>Elija su Poster</h3>
+              
           <select required name="poster">             
             <br>
               <option value="CI">Colection I</option>
